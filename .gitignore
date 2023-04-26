@@ -1,0 +1,8 @@
+backup/
+certs/
+comms/
+database/
+logs/
+moonraker.asvc
+systemd/
+gcodes/*
