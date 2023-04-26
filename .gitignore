@@ -1,0 +1,14 @@
+backup/
+certs/
+comms/
+database/
+logs/
+moonraker.asvc
+systemd/
+gcodes/*
+config/printer-*.cfg
+config/octoeverywhere.conf
+config/octoeverywhere-system.cfg
+config/moonraker.secrets
+octoeverywhere-store/*
+config/.moonraker.conf.bkp
