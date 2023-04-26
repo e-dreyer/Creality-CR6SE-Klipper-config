@@ -11,3 +11,4 @@ config/octoeverywhere.conf
 config/octoeverywhere-system.cfg
 config/moonraker.secrets
 octoeverywhere-store/*
+config/.moonraker.conf.bkp
