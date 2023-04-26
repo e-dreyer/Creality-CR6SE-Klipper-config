@@ -6,3 +6,4 @@ logs/
 moonraker.asvc
 systemd/
 gcodes/*
+printer-*.config
