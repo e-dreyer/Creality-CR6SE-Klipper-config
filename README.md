@@ -29,4 +29,4 @@ The following projects are also installed but not currently implemented.
 
 # Klipper Macros
 
-For my setup I have included the Klipper-Macros repository to provide me with a set of Klipper macros and variables that I can easily maintain and extend. I found myself not knowing how to structure and format my macros and often found it difficult to add macros from other people. With this I hope to learn the workflow and also some tricks and techniques I can use.
+For my setup I have included the (Klipper-Macros repository)[https://github.com/jschuh/klipper-macros] to provide me with a set of Klipper macros and variables that I can easily maintain and extend. I found myself not knowing how to structure and format my macros and often found it difficult to add macros from other people. With this I hope to learn the workflow and also some tricks and techniques I can use.
