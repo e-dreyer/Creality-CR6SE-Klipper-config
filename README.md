@@ -45,3 +45,7 @@ Items I wish to improve on:
 ## Future Plans
 
 Currently the system communicates the the Raspberry Pi via a Mosquitto MQTT server, which I would like to replace. this can be achieved with an RP2040 running as a secondary MCU and then all connected hardware such as the relayes, dimmers, fans and lights will word through it.
+
+## Slicer Profiles
+
+Currently I am using PrusaSlicer and recently ORCAslicer. I am in the process of syncing these two up as their import and export formats differ. once the Orca slicer profiles are up to standard they will be added.
