@@ -30,3 +30,10 @@ The following projects are also installed but not currently implemented.
 # Klipper Macros
 
 For my setup I have included the (Klipper-Macros repository)[https://github.com/jschuh/klipper-macros] to provide me with a set of Klipper macros and variables that I can easily maintain and extend. I found myself not knowing how to structure and format my macros and often found it difficult to add macros from other people. With this I hope to learn the workflow and also some tricks and techniques I can use.
+
+Althought is library has greatly simlpkified the process of having dynamic mesh leveling and helping with accuracy, there al still many efatures for purging, testing and mscros I have not touches. 
+
+Items I wish to improve on:
+
+1. currently the defauly PRINT_START macro is being used, which works wonders, however there are a few ideas I have more more granular control. 
+2. I also want to improve and extend the COLOR_CHANGE Macro
