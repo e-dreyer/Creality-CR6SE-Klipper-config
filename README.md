@@ -41,3 +41,7 @@ Items I wish to improve on:
 
 1. currently the defauly PRINT_START macro is being used, which works wonders, however there are a few ideas I have more more granular control. 
 2. I also want to improve and extend the COLOR_CHANGE Macro
+
+## Future Plans
+
+Currently the system communicates the the Raspberry Pi via a Mosquitto MQTT server, which I would like to replace. this can be achieved with an RP2040 running as a secondary MCU and then all connected hardware such as the relayes, dimmers, fans and lights will word through it.
