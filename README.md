@@ -10,6 +10,10 @@ Along side my printer I have my own custom built enclosure. This enclosure has i
 The LED lights aren't required to use relays, because they are only 12V, but it was the easiest method to connect them and they are only standard lights with 
 no RGB functionality.
 
+## Git-igore
+
+various files and directories have vben adeded to help with security, such as hiding (Octoeverywhere)[https://octoeverywhere.com/] and (Moonraker security)[https://github.com/Arksine/moonraker]
+
 The enclosure also includes two old filament heating lamps used for heating the enclosure. In the summer I can easily achieve 60 degrees in the enclosure and in the winter 50 degrees. These lights are controlled by a single AC dimmer which has a zero-cross detection pin and interrupt. At the time of building this, I was still using Marlin firmware with Octoprint and it wasn't possible to use this interrupt on the Raspberry Pi. For this reason I chose to use an ESP32 connected to WiFi and controlled over MQTT. This is achieved by the addition of Moonraker.
 
 The lights are controlled through a simple PID implementation on the ESP32 and automatically dim to keep the temperature constant, reduce consumption and not overheat the enclosure. The desired target temperature is communicated over MQTT and the value set. This is achieved by starting Gcode for specific filaments in my slicer and some of my Klipper macros. My macros are also set up to turn the heaters off over MQTT after failures and shutdowns, but the ESP32 also has its own failure detection and will respond appropriately to state changes and loss of communication.
@@ -29,4 +33,19 @@ The following projects are also installed but not currently implemented.
 
 # Klipper Macros
 
-For my setup I have included the Klipper-Macros repository to provide me with a set of Klipper macros and variables that I can easily maintain and extend. I found myself not knowing how to structure and format my macros and often found it difficult to add macros from other people. With this I hope to learn the workflow and also some tricks and techniques I can use.
+For my setup I have included the (Klipper-Macros repository)[https://github.com/jschuh/klipper-macros] to provide me with a set of Klipper macros and variables that I can easily maintain and extend. I found myself not knowing how to structure and format my macros and often found it difficult to add macros from other people. With this I hope to learn the workflow and also some tricks and techniques I can use.
+
+Althought is library has greatly simlpkified the process of having dynamic mesh leveling and helping with accuracy, there al still many efatures for purging, testing and mscros I have not touches. 
+
+Items I wish to improve on:
+
+1. currently the defauly PRINT_START macro is being used, which works wonders, however there are a few ideas I have more more granular control. 
+2. I also want to improve and extend the COLOR_CHANGE Macro
+
+## Future Plans
+
+Currently the system communicates the the Raspberry Pi via a Mosquitto MQTT server, which I would like to replace. this can be achieved with an RP2040 running as a secondary MCU and then all connected hardware such as the relayes, dimmers, fans and lights will word through it.
+
+## Slicer Profiles
+
+Currently I am using PrusaSlicer and recently ORCAslicer. I am in the process of syncing these two up as their import and export formats differ. once the Orca slicer profiles are up to standard they will be added.
