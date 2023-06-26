@@ -10,6 +10,8 @@ config/printer-*.cfg
 config/octoeverywhere.conf
 config/octoeverywhere-system.cfg
 octoeverywhere-store/*
-config/.moonraker.conf.bkp
 moonraker.secrets
+config/secrets.json
+.moonraker.uuid
+*.bkp
 config/.moonraker.conf.bkp
